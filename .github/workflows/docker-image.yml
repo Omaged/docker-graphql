@@ -26,9 +26,11 @@ jobs:
     - name: Build Docker Image
       run: |
         docker build -t gane9392693/docker-graphql:0.0.2 .
+        docker build -t gane9392693/docker-graphql:lates .
     - name: Push Docker Image
       run: |
         docker push gane9392693/docker-graphql:0.0.2
+        docker push gane9392693/docker-graphql:lates
 
 
 
